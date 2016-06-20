@@ -24,7 +24,7 @@ public class Test {
 
 
     public static void main(String[] args) throws IOException {
-        String login = "s267027";
+        /*String login = "s267027";
         String password = "Fk247f3mbAu5";
         HashMap<String,LinkedList<String>> data = new HashMap<>();
         Connection.Response res = Jsoup.connect("http://elearn.sde.ru/login/index.php")
@@ -81,7 +81,14 @@ public class Test {
             //System.out.println(pair.getKey() + " = " + pair.getValue());
             it.remove(); // avoids a ConcurrentModificationException
         }*/
+        /*
         System.out.println(doc2);
-        FileUtils.writeStringToFile(new File("file01.html"),doc2.html(),"UTF-8");
+        FileUtils.writeStringToFile(new File("file01.html"),doc2.html(),"UTF-8");*/
+        String a = "a. Информационные системы уровня менеджмента";
+        String b = "c. Информационные системы уровня менеджмента";
+        System.out.println(a.replaceAll("\\s\\.", "").contains(b.replaceAll("\\s\\.", "")));
+        a = a.replaceAll("^\\D. ", "");
+        b = b.replaceAll("^\\D. ", "");
+        System.out.println(a.contains(b));
     }
 }

@@ -7,23 +7,27 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/jsoup-1.8.3.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/jsoup-1.9.2.jar!/" />
         </CLASSES>
         <JAVADOC>
-          <root url="http://jsoup.org/apidocs/" />
+          <root url="jar://$USER_HOME$/Documents/jsoup-1.9.2-javadoc.jar!/" />
         </JAVADOC>
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/Documents/jsoup-1.9.2-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/commons-io-2.4-bin/commons-io-2.4/commons-io-2.4.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/commons-io-2.5/commons-io-2.5.jar!/" />
         </CLASSES>
-        <JAVADOC />
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/Documents/commons-io-2.5/commons-io-2.5-javadoc.jar!/" />
+        </JAVADOC>
         <SOURCES />
       </library>
     </orderEntry>

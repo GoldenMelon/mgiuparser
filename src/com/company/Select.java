@@ -21,6 +21,10 @@ public class Select {
     public static void main(String[] args) throws IOException {
         String login = "s267027";
         String password = "Fk247f3mbAu5";
+//        String sec = "http://elearn.sde.ru/mod/quiz/attempt.php?id=477947"; //proekt.infor.system
+        String sec = "http://elearn.sde.ru/mod/quiz/attempt.php?id=477949";  //proekt.infor.system 2
+//        String sec = "http://elearn.sde.ru/mod/quiz/attempt.php?id=477940"; //интел. информ. системы
+//        String sec = "http://elearn.sde.ru/mod/quiz/attempt.php?id=477989"; //практика
         HashMap<String,LinkedList<String>> data = new HashMap<>();
         Connection.Response res = Jsoup.connect("http://elearn.sde.ru/login/index.php")
                 .data("username", login, "password", password)
@@ -30,7 +34,7 @@ public class Select {
         Map<String, String> loginCookies = res.cookies();
 
         //System.out.println(doc);
-        Document doc2 = Jsoup.connect("http://elearn.sde.ru/mod/quiz/attempt.php?id=441913")
+        Document doc2 = Jsoup.connect(sec)
                 .cookies(loginCookies)
                 .get();
         Elements el = doc2.getElementsByClass("qtext");
